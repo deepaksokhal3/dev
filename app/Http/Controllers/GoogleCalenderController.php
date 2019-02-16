@@ -22,7 +22,7 @@ class GoogleCalenderController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-    	
+    
     	$events = Event::get();  
     	return view('front.calendar.index',compact('events'));
 

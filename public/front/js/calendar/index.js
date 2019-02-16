@@ -216,9 +216,6 @@ for(var i=0; i<allEvents.length;i++){
            end: new Date(evt.end.dateTime)});
 }
 
-  
- 
-debugger;
   data.sort(function(a,b) { return (+a.start) - (+b.start); });
   
 //data must be sorted by start date
