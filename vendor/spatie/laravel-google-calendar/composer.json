@@ -1,0 +1,59 @@
+{
+    "name": "spatie/laravel-google-calendar",
+    "description": "Manage events on a Google Calendar",
+    "keywords": [
+        "spatie",
+        "calendar",
+        "google",
+        "event",
+        "schedule",
+        "laravel-google-calendar"
+    ],
+    "homepage": "https://github.com/spatie/laravel-google-calendar",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "google/apiclient": "^2.2",
+        "illuminate/support": "^5.4.0",
+        "nesbot/carbon": "^1.21"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "~3.4.6",
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\GoogleCalendar\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\GoogleCalendar\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spatie\\GoogleCalendar\\GoogleCalendarServiceProvider"
+            ],
+            "aliases": {
+                "GoogleCalendar": "Spatie\\GoogleCalendar\\GoogleCalendarFacade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
